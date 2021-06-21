@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompareCart</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Item Slider -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- Product Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="http://schauhan.in/Examples/ecommerce_product_slider/style1.css" />
+    <link rel="stylesheet" type="text/css"
+        href="http://schauhan.in/Examples/ecommerce_product_slider/lightslider.css" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <h4 id="logo">Compare<span id="split">Cart</span></h4>
+        <form>
+            <input type="text" id="search-box" placeholder="Search for something ...">
+            <span>
+                <button type="button" class="btn btn-warning" onclick="test()">
+                    Search
+                </button>
+            </span>
+        </form>
+        <a href="#">
+            <ion-icon name="cart-outline" id="cart">
+            </ion-icon>
+            <p id="cart-text">Cart</p>
+            <!-- Cart Product Count Badge -->
+            <span class="badge bg-primary bg-danger" id="count-item">0</span>
+        </a>
+    </nav>
+    <!-- Categories box -->
+    <div id="categories">
+        <div class="container">
+            <div class="row">
+                <div class="col"><img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                        alt="mobiles" id="items"></div>
+                <div class="col"><img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+                        alt="appliances" id="items"></div>
+                <div class="col"><img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+                        alt="electronics" id="items"></div>
+            </div>
+            <div class="row">
+                <div class="col">Mobiles</div>
+                <div class="col">Appliances</div>
+                <div class="col">Electronics</div>
+            </div>
+        </div>
+    </div>
+    <p class="text"></p>
+    <!-- Latest Product / Deals Slider -->
+    <div class="container" id="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Samsung/SamsungM/M32/GW_16thJune/D24426934_IN_WLME_SamsungGalaxy_M32_DesktopTallHero_1500x600._CB666632026_.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/OnePlusNordNewLaunch/16th/GW/12pm/revised/D23753221_OnePlus_Nord_New_launch_GW_Design_SIM_Tall_hero_1500x600_2._CB666559061_.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/OPPO/BAU/GW/V348719848_IN_WLD_OPPO_A74_TallHero_1500x600._CB665915303_.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Flipkart Data -->
+    <p class="container" id="flip-txt">Showing 30 results from Flipkart</p>
+    <!-- Item Slider -->
+    <section class="container" id="slider">
+        <ul id="autoWidth" class="cs-hidden" id="parent">
+            <li class="item-a">
+                <div class="box">
+                    <div class="slide-img">
+                        <img alt="Product" src="/images/images.jpg">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn">Compare</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Apple iPhone 11</a>
+                            <span>Space Grey Color</span>
+                        </div>
+                        <a href="#" class="price">$1000</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 "
+        crossorigin="anonymous "></script>
+    <!-- Ion Icons -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js "></script>
+    <!-- Item Slider -->
+    <script src="http://schauhan.in/Examples/ecommerce_product_slider/jquery-3.5.1.js"></script>
+    <script src="http://schauhan.in/Examples/ecommerce_product_slider/lightslider.js"></script>
+    <!-- Eel Js  -->
+    <script src="/eel.js"></script>
+    <!-- External JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
